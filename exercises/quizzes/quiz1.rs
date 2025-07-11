@@ -29,3 +29,12 @@ mod tests {
         assert_eq!(calculate_price_of_apples(65), 65);
     }
 }
+
+fn calculate_price_of_apples(quantity: i32) -> i32{
+    if quantity<=40{
+        return quantity*2;
+    }
+    else{
+        return quantity;
+    }
+}
